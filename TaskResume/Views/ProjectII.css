@@ -1,0 +1,270 @@
+/* --------------- Section 1 --------------------- Start ------------------------ */
+
+.section1_h1 {
+    font-size: 2.5rem;
+    color: #3d3d3d;
+}
+
+.section1_img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* --------------- Section 1 --------------------- End ------------------------ */
+
+/* --------------- Section 2 --------------------- Start ------------------------ */
+
+.product_section {
+    background-color: #f8f2eb;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #3d3d3d;
+}
+
+.color_circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.btn_Add_to_Cart {
+    background-color: #ff7043;
+    border: none;
+    color: white;
+    padding: 12px;
+    font-weight: 700;
+}
+
+.btn_Add_to_Cart:hover {
+    background-color: #ffffff;
+    border: 2px solid #ff7043;
+}
+
+/* --------------- Section 2 --------------------- End ------------------------ */
+
+
+/* --------------- Section 3 --------------------- Start ------------------------ */
+
+.banner_section {
+    background-color: #595959;
+    padding: 40px 20px;
+}
+
+.banner_design {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section_3_h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.section3_para {
+    color: #e0e0e0;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.btn_shop_now button{
+    background-color: #ff7043;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+.btn-shop{
+    background-color: #ff7043;
+    color: #f8f2eb;
+}
+
+.specials-section {
+    text-align: center;
+    padding: 50px 0;
+}
+.specials-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+.special-item {
+    margin-bottom: 20px;
+}
+.special-icon {
+    font-size: 2rem;
+    background-color: #f5ece6;
+    padding: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    color: #e5895c;
+}
+.special-item h4 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.special-item p {
+    color: #6c757d;
+}
+.btn-shop-now {
+    background-color: #e5895c;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+.btn-shop-now:hover {
+    background-color: #cf7546;
+}
+
+
+.testimonials {
+    background-color: #f8f0e3;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.stars {
+    color: gold;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+.image_container {
+    position: relative;
+    overflow: hidden;
+}
+
+.section7_heading {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section7_heading h1 {
+    font-size: 50px;
+}
+
+.image_container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.tag_icon {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    width: 36px;
+    height: 36px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.discount_tag {
+    position: relative;
+    left: 2px;
+    top: 2px;
+}
+
+.see_more_btn {
+    margin-top: 70px;
+    padding: 12px 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.section_7_pro {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.btn-see{
+    background-color: #ff7043;
+    color: #f8f0e3;
+    padding-top: 50px;
+}
+
+
+
+
+
+/* ************************************last*********************************************** */
+/* Subscribe Section */
+.subscribe-section {
+    background-color: #4d4d4d; /* Grey background */
+    color: #fff;
+}
+
+.subscribe-section h2 {
+    font-weight: bold;
+}
+
+.subscribe-section p {
+    font-size: 1.2rem;
+}
+
+.form-control-lg {
+    border-radius: 30px;
+    max-width: 600px;
+}
+
+.btn-lg {
+    border-radius: 30px;
+    background-color: #ff6c3c;
+    color: white;
+}
+
+.btn-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.social-icons a {
+    background-color: #3b3b3b;
+}
+
+.social-icons a i {
+    color: #fff;
+}
+
+.social-icons a:hover {
+    background-color: #ff6c3c;
+    color: #fff;
+}
+
+
+.btn-color{
+    background-color: #ff6c3c;
+    border-radius: 5px;
+}
+

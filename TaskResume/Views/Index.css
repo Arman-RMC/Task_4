@@ -1,0 +1,220 @@
+/* ----------------- For full body --------------- */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* **************************************** Left Part **********   Started ************************* */
+
+.left_main_part {
+    background-color: cadetblue;
+    padding-top: 50px;
+}
+
+/* ------------------------ Profile ------------------------ */
+.profile_pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid rgb(255, 255, 255);
+}
+
+/* ------------------------- Contacts ------------------------ */
+.contact_head {
+    color: #fff;
+    font-size: 28px;
+}
+
+.hr_design {
+    color: white;
+}
+
+.contact_list_design {
+    line-height: 40px;
+}
+
+.contact_list_design li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact_list_design li {
+    list-style: none;
+}
+
+/* -------------------------- Education ---------------------- */
+
+.education_head {
+    color: #fff;
+    font-size: 28px;
+}
+
+.isc_university, .bca_university {
+    color: #fff;
+    font-size: 18px;
+}
+
+.bca_subject, .bca_semester, .isc_division, .isc_subject {
+    color: #fff;
+}
+
+/* ---------------------------- Skills --------------------------- */
+
+.skills_head {
+    color: #fff;
+    font-size: 28px;
+}
+
+.skills_list {
+    color: #fff;
+}
+
+/* ----------------------------- Languages ---------------------------- */
+.languages_head {
+    color: #fff;
+    font-size: 28px;
+}
+
+.languages_list {
+    color: #fff;
+}
+
+/* **************************************** Left Part ***********   Ended ************************* */
+
+
+/* **************************************** Right Part **********   Started ************** */
+
+.right_main_part {
+    padding-top: 50px;
+}
+
+.vicki {
+    color: #4b4a4a;
+    font-weight: 700;
+}
+
+.kumar {
+    font-weight: 300;
+}
+
+/* ------------------- Naming Part ------------------- */
+
+.name_passion {
+    font-size: 18px;
+}
+
+.profile {
+    margin-top: 100px;
+}
+
+.naming_part {
+    margin-top: 40px;
+}
+
+
+/* ************************ profile_part ************* */
+
+.profile_font{
+    font-weight: 600;
+}
+
+.profile_head {
+    color: #163853;
+}
+
+.profile_details_1 {
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    /* letter-spacing: normal; */
+    text-align: justify;
+    color: #000;
+}
+
+.wokr_experiences_head {
+    color: #163853;
+}
+
+
+
+/* ********************* Step Verticle Line **************** */
+
+.step {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: cream;
+  }
+  
+  .v-stepper {
+    position: relative;
+  }
+  
+  .step .circle {
+    background-color: white;
+    border: 3px solid gray;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+  }
+  
+  .step .line {
+    top: 10px;
+    left: 5px;
+    height: 100%;
+  
+    position: absolute;
+    border-left: 3px solid gray;
+  }
+  
+  .step.completed .circle {
+    visibility: visible;
+    background-color: rgb(80, 80, 80);
+    border-color: rgb(102, 102, 102);
+  }
+  
+  .step.completed .line {
+    border-left: 3px solid rgb(71, 71, 71);
+  }
+/* ************* --------------------- Ist Exp. --------------------- *********** */
+
+.type_1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.exp_type_2 {
+    font-size: 18px;
+}
+
+.exp_heading {
+    font-size: 15px;
+}
+.exp_font_design{
+    font-size: 13px;
+}
+
+/*  ------------------- references_head -------------------- */
+
+.references_head {
+    color: #163853;
+}
+
+/* --------------- reference_office_details_2 ------------- */
+.reference_office_details_2,
+.reference_office_details_1 {
+    line-height: 10px;
+}
+.name_head_phone, .name_passion_phone{
+    color: #fff;
+    font-size: 45px;
+}
+
+.ceo_name, .cto_name{
+    font-weight: 600;
+}
