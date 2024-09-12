@@ -3,6 +3,7 @@
 .section1_h1 {
     font-size: 2.5rem;
     color: #3d3d3d;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .section1_img {
@@ -17,6 +18,7 @@
 
 .product_section {
     background-color: #f8f2eb;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .card {
@@ -58,6 +60,7 @@
 .banner_section {
     background-color: #595959;
     padding: 40px 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .banner_design {
@@ -76,7 +79,7 @@
     margin: 0 auto 30px auto;
 }
 
-.btn_shop_now button{
+.btn_shop_now button {
     background-color: #ff7043;
     border: none;
     padding: 10px 20px;
@@ -86,22 +89,28 @@
     border: none;
 }
 
-.btn-shop{
+.btn-shop {
     background-color: #ff7043;
     color: #f8f2eb;
+    border: none;
 }
 
 .specials-section {
     text-align: center;
     padding: 50px 0;
+    font-family: 'Times New Roman', Times, serif;
 }
+
 .specials-section h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
+
 }
+
 .special-item {
     margin-bottom: 20px;
 }
+
 .special-icon {
     font-size: 2rem;
     background-color: #f5ece6;
@@ -110,14 +119,17 @@
     display: inline-block;
     color: #e5895c;
 }
+
 .special-item h4 {
     margin-top: 20px;
     font-size: 1.5rem;
     font-weight: bold;
 }
+
 .special-item p {
     color: #6c757d;
 }
+
 .btn-shop-now {
     background-color: #e5895c;
     color: white;
@@ -127,6 +139,7 @@
     text-transform: uppercase;
     transition: background-color 0.3s ease;
 }
+
 .btn-shop-now:hover {
     background-color: #cf7546;
 }
@@ -134,6 +147,7 @@
 
 .testimonials {
     background-color: #f8f0e3;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .card {
@@ -199,18 +213,24 @@
     padding: 12px 20px;
     font-weight: 700;
     font-size: 18px;
+    
 }
 
 .section_7_pro {
     text-align: center;
     padding-bottom: 60px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.btn-see{
+.btn-see {
     background-color: #ff7043;
-    color: #f8f0e3;
     padding-top: 50px;
+    border: none;
+    color: #f5ece6;
 }
+/* .btn-see:hover{
+    background-color: #ff9900;
+} */
 
 
 
@@ -219,16 +239,20 @@
 /* ************************************last*********************************************** */
 /* Subscribe Section */
 .subscribe-section {
-    background-color: #4d4d4d; /* Grey background */
+    background-color: #4d4d4d;
+    /* Grey background */
     color: #fff;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .subscribe-section h2 {
     font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .subscribe-section p {
     font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .form-control-lg {
@@ -249,9 +273,7 @@
     font-size: 1.5rem;
 }
 
-.social-icons a {
-    background-color: #3b3b3b;
-}
+
 
 .social-icons a i {
     color: #fff;
@@ -263,8 +285,7 @@
 }
 
 
-.btn-color{
+.btn-color {
     background-color: #ff6c3c;
     border-radius: 5px;
 }
-
