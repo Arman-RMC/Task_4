@@ -1,4 +1,11 @@
+
+
+
 /* --------------- Section 1 --------------------- Start ------------------------ */
+
+
+
+
 
 .section1_h1 {
     font-size: 2.5rem;
@@ -288,4 +295,9 @@
 .btn-color {
     background-color: #ff6c3c;
     border-radius: 5px;
+}
+
+.image_container:hover{
+    transform: scale(1.03);
+    transition: ease-in-out 1s;
 }
