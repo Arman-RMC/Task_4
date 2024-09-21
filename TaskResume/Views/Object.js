@@ -88,7 +88,7 @@ let car = {
 }
 // Call the getCarInfo() method on the car object
 console.log(car.getCarInfo());
-// hello
+// hello js
 
 
 
