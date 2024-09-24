@@ -301,6 +301,16 @@
     transform: scale(1.03);
     transition: ease-in-out 1s;
 }
+.sub_inp{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.input_btm{
+    /* max-width: 400px; */
+    min-width: 350px;
+}
 
 
    
