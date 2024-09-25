@@ -148,4 +148,118 @@ console.log(phone.getDetails());
 
 
 
+// Create an object LibraryBook with properties title, author, and isAvailable (a boolean indicating if the book is available). Add a method checkOut() that changes isAvailable to false, and a method returnBook() that changes isAvailable to true. Use console.log() to show the book's availability status after each action.
+
+
+// Question 1
+
+let libraryBook = {
+    title: "Essential English Grammear",
+    author: "Raymond Murphy",
+    isAvailable: true,
+    checkOut: function () {
+        this.isAvailable = false;
+        console.log(this.title + " by " + this.author + " is not available.");
+        },
+        returnBook: function () {
+            this.isAvailable = true;
+            console.log(this.title + " by " + this.author + " is available.");
+            }
+            }
+            // Check out the book
+            libraryBook.checkOut();
+            // Return the book 
+            libraryBook.returnBook();
+
+
+
+            // Create an object SmartBulb with properties brand, isOn (a boolean), and brightness (a number between 0 and 100). Add methods turnOn(), turnOff(), and adjustBrightness(value) to modify the bulb's status and brightness level. Use console.log() to show the bulb's status after each action.
+
+            
+            // Question 2
+
+            let smartBulb = {
+                brand: "skska",
+                isOn: false,
+                brightness: 0,
+                turnOn: function () {
+                    this.isOn = true;
+                    console.log(this.brand + " bulb is on.");
+                    },
+                    turnOff: function () {
+                        this.isOn = false;
+                        console.log(this.brand + " bulb is off.");
+                        },
+                        adjustBrightness: function (value) {
+                            if (value >= 0 && value <= 100) {
+                                this.brightness = value;
+                                console.log(this.brand + " bulb brightness is " + this.brightness + "%");
+                                }
+                            }
+                        }
+                        // Turn on the bulb
+                        smartBulb.turnOn();
+                        // Turn off the bulb
+                        smartBulb.turnOff();
+                        // Adjust the brightness to 50%
+                        smartBulb.adjustBrightness(50);
+                        // Adjust the brightness to 150%
+                        smartBulb.adjustBrightness(150);
+                        // Adjust the brightness to 0%
+                        smartBulb.adjustBrightness(0);
+
+
+
+                        // Create an object Student with properties name and marks (an array of numbers). Add a method addMark(mark) to add a new mark to the marks array and calculateAverage() to calculate and log the average of the marks.
+
+
+                        // Question 3
+                        let student = {
+                            name: "John",
+                            marks: [90, 80, 70],
+                            addMark: function (mark) {
+                               
+                        
+                       
+
+
+
+
+
+                        // Create an object Laptop with properties brand, batteryLife (in hours), and currentBattery (in percentage). Add methods charge() to set the battery to 100% and use(hours) to reduce the battery based on usage. Log the current battery status after each action.
+
+
+                        // Question 4
+
+                        // let Laptop = {
+                        //     brand: "Asus",
+                        //     batteryLife: 5,
+                        //     currentBattery: 100,
+                        //     charge: function () {
+                        //         this.currentBattery = 100;
+                        //         console.log(this.brand + " laptop battery is fully charged.");
+                        //         },
+                        //         use: function (hours) {
+                        //             if (hours >= 0 && hours <= this.batteryLife) {
+                        //                 this.currentBattery -= hours;
+                        //                 console.log(this.brand + " laptop battery is at " + this.currentBattery + "%.");
+                        //                 }
+                        //                 }
+                        //                 // Charge the laptop
+                        //                 laptop.charge();
+                        //                 // Use the laptop for 2 hours
+                        //                 laptop.use(2);
+                        //                 // Use the laptop for 6 hours
+                        //                 laptop.use(6);
+
+
+
+
+
+
+
+
+
+
+
 
