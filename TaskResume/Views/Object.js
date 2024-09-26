@@ -109,42 +109,77 @@ console.log(rectangle.getArea());
 
 
 
-// Create an object Person with properties firstName, lastName, and age. Add a method introduce() that returns a string introducing the person by their full name and age.
+// Create an object Student with properties name and marks (an array of numbers). Add a method addMark(mark) to add a new mark to the marks array and calculateAverage() to calculate and log the average of the marks.
+
 
 
 // Question 3
 
-let person = {
-    firstName: "Arman",
-    lastName: "Verma",
-    age: 30,
-    getintroduce: function () {
-        return "Hello, my name is " + this.firstName + " " + this.lastName + "  I am " + this.age + " years old.";
+const Student = {
+    name: "Alice",
+    totalMarks: 0,
+    numberOfMarks: 0,
 
+    // Method to add a new mark and update the total and count
+    addMark(mark) {
+        this.totalMarks += mark;
+        this.numberOfMarks++;
+        console.log(`Added mark: ${mark}`);
+    },
+
+    // Method to calculate the average of the marks
+    calculateAverage() {
+        if (this.numberOfMarks === 0) {
+            console.log(`${this.name} has no marks yet.`);
+        } else {
+            const average = this.totalMarks / this.numberOfMarks;
+            console.log(`${this.name}'s average mark is ${average}`);
+        }
     }
-}
-// Call the introduce() method on the person object
-console.log(person.getintroduce());
+};
+
+
+Student.addMark(85);
+Student.addMark(90);
+Student.calculateAverage();
 
 
 
 
 
 
-// Create a Phone object with properties brand and price. Add a method getDetails() that returns a string stating the brand and price of the phone.
+// Create an object Laptop with properties brand, batteryLife (in hours), and currentBattery (in percentage). Add methods charge() to set the battery to 100% and use(hours) to reduce the battery based on usage. Log the current battery status after each action.
+
 
 
 // Question 4
 
-let phone = {
-    brand: "Samsung",
-    price: 15000,
-    getDetails: function () {
-        return "Brand: " + this.brand + ", Price: $" + this.price;
+
+const Laptop = {
+    brand: "Asus",
+    batteryLife: 4,
+    currentBattery: 100,  // 100% battery
+
+    charge() {
+        this.currentBattery = 100;
+        console.log(`${this.brand} laptop is fully charged.`);
+    },
+
+    use(hours) {
+        const usagePercentage = (hours / this.batteryLife) * 100;
+        this.currentBattery -= usagePercentage;
+
+        if (this.currentBattery < 0) {
+            this.currentBattery = 0;
+        }
+
+        console.log(`${this.brand} laptop has ${this.currentBattery}% battery left after using for ${hours} hours.`);
     }
-}
-// Call the getDetails() method on the phone object
-console.log(phone.getDetails());
+};
+
+Laptop.charge();
+Laptop.use(2);
+Laptop.use(8);
 
 
 
@@ -160,97 +195,129 @@ let libraryBook = {
     checkOut: function () {
         this.isAvailable = false;
         console.log(this.title + " by " + this.author + " is not available.");
-        },
-        returnBook: function () {
-            this.isAvailable = true;
-            console.log(this.title + " by " + this.author + " is available.");
-            }
-            }
-            // Check out the book
-            libraryBook.checkOut();
-            // Return the book 
-            libraryBook.returnBook();
+    },
+    returnBook: function () {
+        this.isAvailable = true;
+        console.log(this.title + " by " + this.author + " is available.");
+    }
+}
+// Check out the book
+libraryBook.checkOut();
+// Return the book 
+libraryBook.returnBook();
 
 
 
-            // Create an object SmartBulb with properties brand, isOn (a boolean), and brightness (a number between 0 and 100). Add methods turnOn(), turnOff(), and adjustBrightness(value) to modify the bulb's status and brightness level. Use console.log() to show the bulb's status after each action.
+// Create an object SmartBulb with properties brand, isOn (a boolean), and brightness (a number between 0 and 100). Add methods turnOn(), turnOff(), and adjustBrightness(value) to modify the bulb's status and brightness level. Use console.log() to show the bulb's status after each action.
 
-            
-            // Question 2
 
-            let smartBulb = {
-                brand: "skska",
-                isOn: false,
-                brightness: 0,
-                turnOn: function () {
-                    this.isOn = true;
-                    console.log(this.brand + " bulb is on.");
-                    },
-                    turnOff: function () {
-                        this.isOn = false;
-                        console.log(this.brand + " bulb is off.");
-                        },
-                        adjustBrightness: function (value) {
-                            if (value >= 0 && value <= 100) {
-                                this.brightness = value;
-                                console.log(this.brand + " bulb brightness is " + this.brightness + "%");
-                                }
+// Question 2
+
+let smartBulb = {
+    brand: "skska",
+    isOn: false,
+    brightness: 0,
+    turnOn: function () {
+        this.isOn = true;
+        console.log(this.brand + " bulb is on.");
+    },
+    turnOff: function () {
+        this.isOn = false;
+        console.log(this.brand + " bulb is off.");
+    },
+    adjustBrightness: function (value) {
+        if (value >= 0 && value <= 100) {
+            this.brightness = value;
+            console.log(this.brand + " bulb brightness is " + this.brightness + "%");
+        }
+    }
+}
+// Turn on the bulb
+smartBulb.turnOn();
+// Turn off the bulb
+smartBulb.turnOff();
+// Adjust the brightness to 50%
+smartBulb.adjustBrightness(50);
+// Adjust the brightness to 150%
+smartBulb.adjustBrightness(150);
+// Adjust the brightness to 0%
+smartBulb.adjustBrightness(0);
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function determineAgeGroup(age) {
+    if (age >= 0 && age <= 12) {
+        return "Child";
+        } else if (age >= 13 && age <= 19) {
+            return "Teenager";
+            } else if (age >= 20 && age <= 64) {
+                return "Adult";
+                } else if (age >= 65) {
+                    return "Senior";
+                    }
+                    }
+                    // Call the function with a test age
+                    console.log(determineAgeGroup(25)); // Output: Adult
+                    console.log(determineAgeGroup(70)); // Output: Senior
+
+
+
+   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////               
+function getGrade(score) {
+    if (score >= 90 && score <= 100) {
+        return "A";
+        } else if (score >= 80 && score < 90) {
+            return "B";
+            } else if (score >= 70 && score < 80) {
+                return "C";
+                } else if (score >= 60 && score < 70) {
+                    return "D";
+                    } else if (score < 60) {
+                        return "F";
+                        } else {
+                            return "Invalid score.";
                             }
-                        }
-                        // Turn on the bulb
-                        smartBulb.turnOn();
-                        // Turn off the bulb
-                        smartBulb.turnOff();
-                        // Adjust the brightness to 50%
-                        smartBulb.adjustBrightness(50);
-                        // Adjust the brightness to 150%
-                        smartBulb.adjustBrightness(150);
-                        // Adjust the brightness to 0%
-                        smartBulb.adjustBrightness(0);
+                            }
+                            // Test the function with a score
+                            console.log(getGrade(85)); 
+                            console.log(getGrade(55)); 
+                            console.log(getGrade(95));
+                            console.log(getGrade(75));
+                            
 
-
-
-                        // Create an object Student with properties name and marks (an array of numbers). Add a method addMark(mark) to add a new mark to the marks array and calculateAverage() to calculate and log the average of the marks.
-
-
-                        // Question 3
-                        let student = {
-                            name: "John",
-                            marks: [90, 80, 70],
-                            addMark: function (mark) {
-                               
-                        
-                       
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                             function checkEvenOdd(number){
+                                if (number % 2 == 0) {
+                                    return "Even";
+                                    } else {
+                                        return "Odd";
+                                        }
+                                        }
+                                        // Test the function with a number
+                                        console.log(checkEvenOdd(10)); // Output: Even
+                                        console.log(checkEvenOdd(11)); // Output: Odd
 
 
 
 
+                                        
 
-                        // Create an object Laptop with properties brand, batteryLife (in hours), and currentBattery (in percentage). Add methods charge() to set the battery to 100% and use(hours) to reduce the battery based on usage. Log the current battery status after each action.
+
+                            
+                            
 
 
-                        // Question 4
 
-                        // let Laptop = {
-                        //     brand: "Asus",
-                        //     batteryLife: 5,
-                        //     currentBattery: 100,
-                        //     charge: function () {
-                        //         this.currentBattery = 100;
-                        //         console.log(this.brand + " laptop battery is fully charged.");
-                        //         },
-                        //         use: function (hours) {
-                        //             if (hours >= 0 && hours <= this.batteryLife) {
-                        //                 this.currentBattery -= hours;
-                        //                 console.log(this.brand + " laptop battery is at " + this.currentBattery + "%.");
-                        //                 }
-                        //                 }
-                        //                 // Charge the laptop
-                        //                 laptop.charge();
-                        //                 // Use the laptop for 2 hours
-                        //                 laptop.use(2);
-                        //                 // Use the laptop for 6 hours
-                        //                 laptop.use(6);
+
+
+
+
+
 
 
 
