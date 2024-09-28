@@ -1,100 +1,72 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloth Project</title>
-    <link rel="stylesheet" href="ProjectII.css">
-    <link rel="stylesheet" href="../assets/css/bootstrap.css">
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/fonts/OFL.txt">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9fe8afb7ed.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reg_form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/fonts/OFL.txt">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9fe8afb7ed.js" crossorigin="anonymous"></script>
 </head>
-<body style="background-color: antiquewhite;">
 
-<!-- ********************************************************** Navbar part ***************************************************************************** -->
-    <div style="background-color: black;">
-        <nav class="navbar container navbar-expand-lg">
-            <div class="container-fluid">
-                <img src="https://internnexus.com/assets/inlogowhite.png" alt="" width="150px">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                           
-                    </ul>
-                    <form class="d-flex" role="search ">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg px-5">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold fs-2 text-light" href="#">Future-Coders</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active fw-bold text-light" aria-current="page" href="#">Home</a>
+          <a class="nav-link active fw-bold text-light" aria-current="page" href="#">About</a>
+          <a class="nav-link active fw-bold text-light" aria-current="page" href="#">Services</a>
+          <a class="nav-link active fw-bold text-light" aria-current="page" href="#">Contacts</a>
+        </div>
+      </div>
     </div>
+  </nav>
 
-    <br>
-    <br>
-
-<!-- *************************************************** Form part ********************************************************************************** -->
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-6 col-sm-8 col-12">
-      <h2 class="text-center mt-5">Registration Form</h2>
-      <form class="mt-3">
-        <!-- Name input -->
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+  <!-- form -->
+<div class="container d-flex justify-content-center align-items-center mt-5">
+  <div class="row mt-5">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <img src="https://img.freepik.com/free-vector/login-concept-illustration_114360-739.jpg" class="img-fluid w-75" alt="">
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <form class="col">
+        <div class="mb-3 col-8">
+          <label for="exampleInputName" class="form-label" style="color: aliceblue;">Enter Your Name:</label>
+          <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
         </div>
-        <br>
-        <br>
-
-        <!-- Email input -->
-        <div class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        <div class="mb-3 col-8">
+          <label for="exampleInputEmail1" class="form-label" style="color: aliceblue;">Email address:</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
-        <br>
-        <br>
-
-        <!-- Password input -->
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="Enter your password">
+        <div class="mb-3 col-8">
+          <label for="exampleInputPassword1" class="form-label" style="color: aliceblue;">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
-        <br>
-        <br>
-
-
-        <!-- Submit button -->
-        <!-- <button"submit" class="btn btn-primary btn-block">Submit</button> -->
-        <button type="button" class="btn btn-outline-secondary" style="background-color: coral; color: black;">Submit</button>
+        <!-- <button type="submit" class="btn_submit">Submit</button> -->
+        <button class="btn-submit p-2 rounded-4 py-2 px-3">Submit</button>
       </form>
+
     </div>
   </div>
 </div>
-<br>
-<br>
-
-<!-- Bootstrap JS (optional) and dependencies -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
+
+
+
 </html>
-
-

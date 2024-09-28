@@ -1,0 +1,20 @@
+.btn-last{
+    border-radius: 20px;
+    color: black;
+    outline: 10px;
+}
+.h2{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+}
+.heading_2{
+    font-size: 50px;
+    color: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+}
+.p{
+    font-size: 20px;
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+}

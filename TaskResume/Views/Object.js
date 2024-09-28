@@ -253,63 +253,173 @@ smartBulb.adjustBrightness(0);
 function determineAgeGroup(age) {
     if (age >= 0 && age <= 12) {
         return "Child";
-        } else if (age >= 13 && age <= 19) {
-            return "Teenager";
-            } else if (age >= 20 && age <= 64) {
-                return "Adult";
-                } else if (age >= 65) {
-                    return "Senior";
-                    }
-                    }
-                    // Call the function with a test age
-                    console.log(determineAgeGroup(25)); // Output: Adult
-                    console.log(determineAgeGroup(70)); // Output: Senior
+    } else if (age >= 13 && age <= 19) {
+        return "Teenager";
+    } else if (age >= 20 && age <= 64) {
+        return "Adult";
+    } else if (age >= 65) {
+        return "Senior";
+    }
+}
+// Call the function with a test age
+console.log(determineAgeGroup(25)); // Output: Adult
+console.log(determineAgeGroup(70)); // Output: Senior
 
 
 
-   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////               
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////               
 function getGrade(score) {
     if (score >= 90 && score <= 100) {
         return "A";
-        } else if (score >= 80 && score < 90) {
-            return "B";
-            } else if (score >= 70 && score < 80) {
-                return "C";
-                } else if (score >= 60 && score < 70) {
-                    return "D";
-                    } else if (score < 60) {
-                        return "F";
-                        } else {
-                            return "Invalid score.";
-                            }
-                            }
-                            // Test the function with a score
-                            console.log(getGrade(85)); 
-                            console.log(getGrade(55)); 
-                            console.log(getGrade(95));
-                            console.log(getGrade(75));
-                            
+    } else if (score >= 80 && score < 90) {
+        return "B";
+    } else if (score >= 70 && score < 80) {
+        return "C";
+    } else if (score >= 60 && score < 70) {
+        return "D";
+    } else if (score < 60) {
+        return "F";
+    } else {
+        return "Invalid score.";
+    }
+}
+// Test the function with a score
+console.log(getGrade(85));
+console.log(getGrade(55));
+console.log(getGrade(95));
+console.log(getGrade(75));
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                             function checkEvenOdd(number){
-                                if (number % 2 == 0) {
-                                    return "Even";
-                                    } else {
-                                        return "Odd";
-                                        }
-                                        }
-                                        // Test the function with a number
-                                        console.log(checkEvenOdd(10)); // Output: Even
-                                        console.log(checkEvenOdd(11)); // Output: Odd
+function checkEvenOdd(number) {
+    if (number % 2 == 0) {
+        return "Even";
+    } else {
+        return "Odd";
+    }
+}
+// Test the function with a number
+console.log(checkEvenOdd(10)); // Output: Even
+console.log(checkEvenOdd(11)); // Output: Odd
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// # 
+
+let variable1 = [1, 2, 3, 4];
+if (variable1 instanceof Array) {
+    console.log("variable1 is an array");
+}
+else {
+    console.log("variable1 is not array ");
+
+}
 
 
 
 
-                                        
+
+let variable2 = [1, 2, 3, 4];
+if (Array.isArray(variable2)) {
+    console.log("variable2 is an array");
+}
+else {
+    console.log("variable2 is not array ");
+
+}
 
 
-                            
-                            
+
+
+
+let variable3 = [1, 2, 3, 4];
+if (Array.prototype.isPrototypeOf(variable3)) {
+    console.log("variable2 is an array");
+}
+else {
+    console.log("variable2 is not array ");
+
+}
+
+
+// Stack Implementation
+let stack = [];
+
+// Push elements into the stack
+stack.push(10);
+stack.push(20);
+stack.push(30);
+
+console.log("Stack after pushing: ", stack); // Output: [10, 20, 30]
+
+// Pop element from the stack
+let poppedElement = stack.pop();
+console.log("Popped Element: ", poppedElement); // Output: 30
+
+console.log("Stack after popping: ", stack); // Output: [10, 20]
+
+
+
+
+
+// Queue Implementation
+let queue = [];
+
+// Enqueue elements into the queue
+queue.push(10);
+queue.push(20);
+queue.push(30);
+
+console.log("Queue after enqueueing: ", queue); // Output: [10, 20, 30]
+
+// Dequeue element from the front of the queue
+let dequeuedElement = queue.shift();
+console.log("Dequeued Element: ", dequeuedElement); // Output: 10
+
+console.log("Queue after dequeuing: ", queue); // Output: [20, 30]
+
+
+
+
+// # Shift
+
+let arr = [1, 2, 3, 4];
+let firstElement = arr.shift();
+
+console.log(firstElement); // Output: 1
+console.log(arr);          // Output: [2, 3, 4]
+
+
+
+// #Unshift
+
+let brr = [2, 3, 4];
+let newLength = arr.unshift(1);
+
+console.log(newLength);    // Output: 4
+console.log(arr);          // Output: [1, 2, 3, 4]
+
+
+// #Slice
+
+let crr = [1, 2, 3, 4, 5];
+let slicedArr = arr.slice(1, 4);
+
+console.log(slicedArr);    // Output: [2, 3, 4]
+console.log(arr);          // Output: [1, 2, 3, 4, 5] // Original array remains unchanged
+
+
+
+
+
+
+
+
+
+
 
 
 
