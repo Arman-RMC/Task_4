@@ -307,7 +307,7 @@ console.log(checkEvenOdd(11)); // Output: Odd
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-// # 
+// # instanceOf
 
 let variable1 = [1, 2, 3, 4];
 if (variable1 instanceof Array) {
@@ -319,7 +319,7 @@ else {
 }
 
 
-
+// ArrayisArray
 
 
 let variable2 = [1, 2, 3, 4];
@@ -333,7 +333,7 @@ else {
 
 
 
-
+// isPrototypeOf
 
 let variable3 = [1, 2, 3, 4];
 if (Array.prototype.isPrototypeOf(variable3)) {
@@ -345,7 +345,8 @@ else {
 }
 
 
-// Stack Implementation
+// Stack 
+
 let stack = [];
 
 // Push elements into the stack
@@ -363,7 +364,7 @@ console.log("Stack after popping: ", stack); // Output: [10, 20]
 
 
 
-
+// # Queue
 
 // Queue Implementation
 let queue = [];

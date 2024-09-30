@@ -1,11 +1,44 @@
+body {
+    background-color: #FFFFFF;
+}
 
-body{
-    background-color: #4f5050;
+.navbar {
+    background-color: #0489D7;
 }
-.navbar{
-    background-color: #7d36ee;
-}
+
 .btn-submit {
-    background-color: #01AA9C;
+    background-color: #0489D7;
     border-radius: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    padding: 12px 22px;
+}
+
+.btn-submit:hover {
+    background-color: white;
+    color: #01766D;
+    border: #01766D 2px solid;
+}
+
+.reg_form {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.bcg_img {
+    background-image: url("https://bootstrapmade.com/content/demo/Arsha/assets/img/hero-img.png ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+
+}
+
+.form_style {
+    box-shadow: 1px 1px 1px 1px gray;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color:#000000;
 }
